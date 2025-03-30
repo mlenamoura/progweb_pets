@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="css/styles.css">
+
+    <title>Cuidados Pets</title>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/pata.png" alt="patinha de cachorro">
+            <h1>I love Dogs</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#racas">Raças</a></li>
+            <li><a href="#dicas">Dicas</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+        </ul>
+    </nav>
+    <section class="bem-vindo">
+        <p>Bem-vindo ao nosso blog sobre cachorros de estimação! Neste espaço, você encontrará informações e dicas úteis
+            sobre como cuidar melhor do seu amigo canino.</p>
+    </section>
+    <section id="galeria" class="galeria">
+        <div class="carousel">
+        </div>
+    </section>
+
+    <section id="racas" class="racas">
+        <div class="coluna">
+            <img src="img/labrador.png" alt="foto de labrador amarelo">
+            <h3>Labrador</h3>
+            <p>Uma das raças mais populares do mundo, o labrador é conhecido por ser amigável, leal e inteligente.</p>
+        </div>
+        <div class="coluna">
+            <img src="img/golden.png" alt="Foto do Golden">
+            <h3>Golden Retriever</h3>
+            <p>Outro favorito popular, o golden retriever é um cachorro amigável e afetuoso que adora brincar.</p>
+        </div>
+        <div class="coluna">
+            <img src="img/poodle.png" alt="Foto do Poodle">
+            <h3>Poodle</h3>
+            <p>Uma raça inteligente e brincalhona, o poodle vem em três tamanhos diferentes e é uma ótima opção para
+                pessoas com alergias.</p>
+        </div>
+        <div class="coluna">
+            <img src="img/bulldog.png" alt="Foto do Bulldog">
+            <h3>Bulldog Inglês</h3>
+            <p>Um cachorro amigável e leal, o bulldog inglês é uma raça tranquila e de baixa energia.</p>
+        </div>
+        <div class="coluna">
+            <img src="img/pastor.png" alt="foto do pastor alemão">
+            <h3>Pastor Alemão</h3>
+            <p>Uma raça inteligente e corajosa, o pastor alemão é frequentemente usado como cão policial ou de guarda.
+            </p>
+        </div>
+        <div class="coluna">
+            <img src="img/caramelo.png" alt="foto do caramelo">
+            <h3>SRD Caramelo Brasileiro</h3>
+            <p>Figurinha carimbada em quase todos os lares e ruas brasileiras, com suas várias tonalidades de caramelo,
+                é parceiro para todas as horas e símbolo do Brasil.</p>
+        </div>
+    </section>
+    <div class="exibir-raca">
+        <h3>Exibir Informações de Raça</h3>
+        <button onclick="exibirRaca('Labrador')">Labrador</button>
+        <button onclick="exibirRaca('Bulldog')">Bulldog</button>
+        <button onclick="exibirRaca('Poodle')">Poodle</button>
+        <button onclick="exibirRaca('Golden')">Golden Retriever</button>
+        <button onclick="exibirRaca('Caramelo')">Caramelo</button>
+        <button onclick="exibirRaca('Pastor')">Pastor Alemão</button>
+        <p id="infoRaca" style="font-weight:bold;"></p>
+    </div>
+
+    <div class="pesquisar-raca">
+        <h3>Pesquisar Raça</h3>
+        <input type="text" id="campoPesquisa" placeholder="Digite uma raça (ex: labrador)">
+        <button onclick="pesquisarRaca()">Pesquisar</button>
+        <p id="resultadoPesquisa" style="font-weight:bold;"></p>
+    </div>
+
+    <section id="dicas" class="dicas">
+        <h3>Dicas para treinamento de cachorro</h3>
+        <ol>
+            <li>Use reforço positivo: recompense seu cachorro quando ele fizer algo certo, em vez de puni-lo quando ele
+                fizer algo errado.</li>
+            <li>Seja consistente: use os mesmos comandos e treinamentos todos os dias para que o seu cachorro entenda o
+                que é esperado dele.</li>
+            <li>Não desista: treinar um cachorro pode ser difícil, mas é importante ser persistente e continuar
+                tentando.</li>
+            <li>Envolva toda a família: todos devem participar do treinamento do cachorro para que ele entenda o que é
+                esperado dele.</li>
+            <li>Considere a ajuda de um profissional: se você estiver tendo dificuldades com o treinamento do seu
+                cachorro, pode ser útil procurar a ajuda de um treinador profissional.</li>
+        </ol>
+        <p>Esperamos que estas informações e dicas tenham sido úteis para você e seu cachorro. Lembre-se, cuidar de um
+            cachorro é uma responsabilidade importante, mas com amor e atenção, você pode desfrutar de uma vida feliz e
+            saudável com o seu melhor amigo peludo.</p>
+    </section>
+
+    <section id="contato" class="contato">
+        <form action="enviaemail.php" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" required></textarea><br>
+            <button type="submit">Enviar Agora</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Marina Lena Ferreira de Moura</p>
+        <img src="img/dogs.png" alt="cachorros" width="600" height="auto">
+    </footer>
+</body>
+
+</html>

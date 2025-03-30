@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: url('img/campo.jpg') no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    padding: 1.25em;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    gap: 2em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #005564;
+    padding: 0.1em;
+}
+
+footer {
+    color: #fff;
+    background-color: black;
+    padding: 2em;
+}
+
+.racas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.coluna {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.coluna img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.coluna h3 {
+    margin-bottom: 10px;
+    color: #2e8b57;
+}
+
+.coluna p {
+    font-size: 14px;
+    color: #555;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #04393d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background-color: #097f88;
+}
+
+.contato {
+    margin-top: 20px;
+}
+
+.bem-vindo {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.bem-vindo p {
+    font-size: 16px;
+    color: #333;
+}
+
+.dicas {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #097f88;
+    margin: 20px;
+}
+
+.dicas p {
+    font-size: 16px;
+    color: #333;
+}
+
+#galeria {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+#galeria img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10%;
+}
