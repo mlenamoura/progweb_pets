@@ -19,7 +19,7 @@ header {
 }
 
 nav {
-    background-color: black;
+    background-color: rgb(230, 92, 140);
     padding: 10px 0;
 }
 
@@ -44,7 +44,7 @@ nav ul li a:hover {
 
 footer {
     color: #fff;
-    background-color: black;
+    background-color: rgb(230, 92, 140);
     padding: 2em;
 }
 
